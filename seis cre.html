@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Ejercicio Final - Formulario </title>
+<link rel="stylesheet" href="htpps://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="htpps://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css
+">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/botstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fonr-aweson/4.7.0/css/
+font-awesome.min.css">
+
+</head>
+<body> 
+    <form>
+
+    <label> 
+        Nombre 
+        <input type="text" name="nombre" id="nombre"/>
+    </label>
+    <label> 
+        Apellido 
+        <input type="text" name="apellidos" id="apellidos"/>
+    </label>
+    <label> 
+        Telefono 
+        <input type="text" name="Telefono" id="telefono"/>
+    </label>
+    <label> 
+        Comentario 
+        <input type="text" name="comentario" id="comentario"/>
+    </label>
+    <button onclick="enviar();"></button>
+    <script type="text/javascript">
+        function enviar () {
+            var nombre=$('#nombre').val();
+            var nombre=$('#apellidos').val();
+            var nombre=$('#telefono').val();
+            var nombre=$('#comentario').val();
+            if (nombre=="" && apellidos=="" && telefono=="" && comentario=="") {
+                alert('Faltan campos por completar');
+            }  else {
+                $('form').html("<h1> Formulario enviado satisfactoriamente</h1>");
+            }
+             }
+     </script>
+    </form> 
+</boody>
+</html>

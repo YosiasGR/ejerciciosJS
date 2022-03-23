@@ -1,0 +1,21 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+function responder() {
+    var nombre = $("#nombre").val();
+    if (nombre == "John Deacon") {
+    	alert('Respuesta correcta');
+    } else {
+    	alert('Respuesta incorrecta');
+    }
+}
+</script>
+</head>
+<body>
+	<p>¿Quién es el integrante bajista de Queen?</p>
+	<input type="text" name="nombre" id="nombre" />
+	<button onclick="responder();">Iniciar</button>
+</body>
+</html>

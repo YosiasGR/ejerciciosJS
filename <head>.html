@@ -1,0 +1,19 @@
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+function comprobar() {
+  var t1 = 50;
+  var t2 = $('#t2').val();
+  if (t1>t2) 
+    {
+      alert('t1 es mayor a t2');
+    } else {
+      alert('1 es menor a t2');
+    }
+}
+</script>
+</head>
+<body>
+<input type="number" id="t2" name="t2" />
+<button onclick="comprobar();"">Comprobar ahora</button>
+</body>
